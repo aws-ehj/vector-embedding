@@ -5,12 +5,13 @@ pip install gensim
 
 #Step 2: Load Pre-trained glove-wiki-gigaword-50 Model(비교적 크기가 작은 모델 다운로드)
 
-import gensim.downloader as api model = api.load('glove-wiki-gigaword-50')
+import gensim.downloader as api 
+model = api.load('glove-wiki-gigaword-50')
 
 #Step 3: Exploring Word Embeddings
 
 # Get vector for a word (워드 King에 대한 벡터값을 조회해 봅니다.) 
-word_vector = model['king’] 
+word_vector = model["king"] 
 
 
 # Find similar words (King이라는 단어와 비슷한 단어를 5개 찾아봅니다.)
