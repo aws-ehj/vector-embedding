@@ -16,7 +16,7 @@ embeddings = model.encode(sentences)
 
 print("Sentence Embeddings:")
 for sentence, embedding in zip(sentences, embeddings): 
-  print(f"Sentence: {sentence}\nEmbedding: {embedding[:5]}...\n")
+	print(f"Sentence: {sentence}\nEmbedding: {embedding[:5]}...\n")
 
 #To visualize high-dimensional embeddings, we can use t-SNE.
 
